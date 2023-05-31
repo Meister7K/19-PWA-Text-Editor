@@ -26,9 +26,9 @@ module.exports = () => {
       new WebpackPwaManifest({
         name:'pwa',
         short_name: 'pwa',
-        description: '',
-        background_color: '',
-        theme_color: '',
+        description: 'text editor',
+        background_color: '#FE65BF',
+        theme_color: '#07B8BB',
         start_url: '/',
         publicPath: '/',
         icons:[{
