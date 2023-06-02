@@ -33,12 +33,12 @@ module.exports = () => {
         publicPath: '/',
         icons:[{
           src: path.resolve('src/images/logo.png'),
-          sizes: [100,120,200,250,400,500],
+          sizes: [96,120,200,250,400,500],
           destination: path.join('assets','icons'),
         }],
       }),
       new InjectManifest({
-        swSrc: './src/src-sw.js',
+        swSrc: './src-sw.js',
         swDest: 'sw.js',
       }),
     ],
@@ -47,7 +47,7 @@ module.exports = () => {
       rules: [
         {
           test: /\.css$/i,
-          use: ['style.loader', 'css-loader'],
+          use: ['style-loader', 'css-loader'],
         },
         {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
